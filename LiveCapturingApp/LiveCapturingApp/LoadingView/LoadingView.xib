@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="LiveCapturingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="labelImageView" destination="RXY-Rj-pTZ" id="rsH-XP-hzv"/>
+                <outlet property="omgImageView" destination="5O1-lF-KBf" id="0Jo-xs-cBN"/>
+                <outlet property="petImageView" destination="5xM-gR-FVH" id="F0k-72-EJP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pet" translatesAutoresizingMaskIntoConstraints="NO" id="5xM-gR-FVH">
+                    <rect key="frame" x="28" y="77" width="201" height="277"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="god" translatesAutoresizingMaskIntoConstraints="NO" id="5O1-lF-KBf">
+                    <rect key="frame" x="96" y="10" width="200" height="88"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label" translatesAutoresizingMaskIntoConstraints="NO" id="RXY-Rj-pTZ">
+                    <rect key="frame" x="0.0" y="114" width="280" height="162"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RXY-Rj-pTZ" secondAttribute="bottom" constant="104" id="DVp-Zn-Dvs"/>
+                <constraint firstItem="5O1-lF-KBf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Iu0-9v-uqu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5xM-gR-FVH" secondAttribute="trailing" constant="51" id="LXN-lV-UDe"/>
+                <constraint firstItem="RXY-Rj-pTZ" firstAttribute="top" secondItem="5O1-lF-KBf" secondAttribute="bottom" constant="16" id="TFC-qG-80A"/>
+                <constraint firstItem="RXY-Rj-pTZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="70" id="VPj-ew-5CA"/>
+                <constraint firstItem="5O1-lF-KBf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="96" id="fWl-9s-px3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5xM-gR-FVH" secondAttribute="bottom" constant="26" id="ifs-YS-Ksi"/>
+                <constraint firstItem="5xM-gR-FVH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="33" id="mgt-EO-c2k"/>
+                <constraint firstItem="RXY-Rj-pTZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oxq-dS-KVa"/>
+                <constraint firstItem="5xM-gR-FVH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="pJ5-uL-JJ3"/>
+                <constraint firstAttribute="trailing" secondItem="5O1-lF-KBf" secondAttribute="trailing" constant="-16" id="sOF-I6-MXR"/>
+                <constraint firstItem="RXY-Rj-pTZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="vmd-1X-6ef"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-201.44927536231884" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="god" width="1440" height="816"/>
+        <image name="label" width="1043" height="1070"/>
+        <image name="pet" width="995" height="1125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
