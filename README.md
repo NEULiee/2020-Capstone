@@ -35,3 +35,30 @@ Custom YOLO V3 Object Detection을 이용한 페트병 라벨 자동 분리기�
 4. 페트병의 라벨의 위치가 절단기의 위치와 다르다면 모터를 돌려서 절단기의 위치로 옮깁니다.
 5. 라벨과 절단기의 위치가 같아지면 절단기로 라벨을 제거합니다.
 6. 라벨을 제거후 분리수거 함으로 배출합니다.
+<br>
+
+## 코드
+> 라즈베리 파이에서 main.py를 작동시킨 후 application을 작동해야 합니다.
+> 위치 조정 및 테스트는 CAMERA_TEST.py에서 진행하였습니다.
+### Colab 학습 코드
+train_data.py
+
+
+### 딥러닝
+yolov3_custom2_last.weights - 딥러닝 모델 <br>
+yolov3_custom2.cfg - configure file <br>
+coco.names - names file <br>
+
+
+### 라즈베리파이 내  코드
+main.py -  전체 control tower, server 그리고 arduino와 연동
+CAMERA_TEST.py - real time detect 테스트,  좌표값 위치 맞추기 테스트
+
+
+### 아두이노 내 코드
+do_motor.ino - Serial 1 , left right motor 담당
+cut_motor.ino - Serial 2, cut motor 담당
+
+
+### iOS Application 코드
+LiveCapturingApp.zip
