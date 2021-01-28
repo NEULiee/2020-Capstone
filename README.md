@@ -1,7 +1,10 @@
 # 2020-Capstone
 ## 주제
 
-Custom YOLO V3 Object Detection을 이용한 페트병 라벨 자동 분리기기<br><br>
+Custom YOLO V3 Object Detection을 이용한 페트병 라벨 자동 분리기기<br>
+<img src = "https://github.com/NEULiee/2020-Capstone/blob/main/photo/img_fullshot.jpeg" width="500" height="300">
+
+<br><br>
 ## 유튜브 링크 (사진클릭)
 
 [![welle](https://img.youtube.com/vi/_Ru-F-8oGIk/0.jpg)](https://www.youtube.com/watch?app=desktop&v=_Ru-F-8oGIk&feature=youtu.be "시연 영상")<br><br>
