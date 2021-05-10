@@ -1,0 +1,6 @@
+framework module Pods_LiveCapturingApp {
+  umbrella header "Pods-LiveCapturingApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
